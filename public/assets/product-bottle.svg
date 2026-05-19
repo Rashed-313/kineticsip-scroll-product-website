@@ -1,0 +1,127 @@
+<svg width="520" height="960" viewBox="0 0 520 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="capBody" x1="203" y1="30" x2="322" y2="154" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B3328"/>
+      <stop offset="0.32" stop-color="#15110F"/>
+      <stop offset="0.7" stop-color="#090807"/>
+      <stop offset="1" stop-color="#29120F"/>
+    </linearGradient>
+    <linearGradient id="glassBody" x1="162" y1="128" x2="356" y2="875" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5A2C1B"/>
+      <stop offset="0.12" stop-color="#22120D"/>
+      <stop offset="0.42" stop-color="#080706"/>
+      <stop offset="0.72" stop-color="#160B08"/>
+      <stop offset="1" stop-color="#3A0718"/>
+    </linearGradient>
+    <linearGradient id="liquidVolume" x1="180" y1="270" x2="341" y2="858" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC24D" stop-opacity="0.16"/>
+      <stop offset="0.25" stop-color="#FF8A1F" stop-opacity="0.28"/>
+      <stop offset="0.66" stop-color="#A9361D" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#D71945" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="edgeLight" x1="160" y1="148" x2="360" y2="872" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4DA" stop-opacity="0.42"/>
+      <stop offset="0.28" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="0.66" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#FFDFA4" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="leftHighlight" x1="185" y1="164" x2="226" y2="835" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6DB" stop-opacity="0.88"/>
+      <stop offset="0.12" stop-color="#FFF6DB" stop-opacity="0.54"/>
+      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0.13"/>
+      <stop offset="0.73" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#FFE2A4" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="rightHighlight" x1="316" y1="192" x2="298" y2="832" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.055"/>
+      <stop offset="1" stop-color="#FFB331" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="labelWrap" x1="132" y1="362" x2="388" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE083"/>
+      <stop offset="0.25" stop-color="#FFB83F"/>
+      <stop offset="0.58" stop-color="#FF6F20"/>
+      <stop offset="1" stop-color="#B90F37"/>
+    </linearGradient>
+    <linearGradient id="labelCore" x1="173" y1="450" x2="350" y2="601" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20120E"/>
+      <stop offset="0.56" stop-color="#090706"/>
+      <stop offset="1" stop-color="#190A10"/>
+    </linearGradient>
+    <radialGradient id="innerGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 544) rotate(90) scale(380 128)">
+      <stop stop-color="#FFB63F" stop-opacity="0.38"/>
+      <stop offset="0.42" stop-color="#FF7A21" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FF7A21" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomRefraction" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 815) rotate(90) scale(92 67)">
+      <stop stop-color="#FFCA62" stop-opacity="0.48"/>
+      <stop offset="0.56" stop-color="#FF7E1E" stop-opacity="0.19"/>
+      <stop offset="1" stop-color="#D71945" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="labelSheen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 412) rotate(28) scale(226 56)">
+      <stop stop-color="#FFF3B6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFF3B6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+    <filter id="labelDrop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.36"/>
+    </filter>
+    <filter id="microBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="260" cy="885" rx="118" ry="35" fill="#000000" fill-opacity="0.66" filter="url(#softShadow)"/>
+  <ellipse cx="260" cy="850" rx="88" ry="28" fill="#FF8A1F" fill-opacity="0.18" filter="url(#softShadow)"/>
+
+  <path d="M204 70C204 48.461 221.461 31 243 31H277C298.539 31 316 48.461 316 70V136H204V70Z" fill="url(#capBody)"/>
+  <path d="M199 58H321V85H199V58Z" fill="#11100F"/>
+  <path d="M207 39H313V65H207V39Z" fill="#3B241D"/>
+  <path d="M214 34H306" stroke="#FFF0D1" stroke-opacity="0.22" stroke-width="4" stroke-linecap="round"/>
+  <path d="M204 86H316V101H204V86Z" fill="#050403" fill-opacity="0.46"/>
+  <g opacity="0.48">
+    <path d="M214 78V133" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"/>
+    <path d="M226 78V133" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+    <path d="M238 78V133" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"/>
+    <path d="M250 78V133" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+    <path d="M262 78V133" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="3"/>
+    <path d="M274 78V133" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+    <path d="M286 78V133" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3"/>
+    <path d="M298 78V133" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+    <path d="M310 78V133" stroke="#FFFFFF" stroke-opacity="0.17" stroke-width="3"/>
+  </g>
+
+  <path d="M178 211C178 162.399 217.399 123 266 123C314.601 123 354 162.399 354 211V788C354 841.019 311.019 884 258 884C204.981 884 162 841.019 162 788V211H178Z" fill="url(#glassBody)"/>
+  <path d="M181 304C213 281 310 281 341 304V788C341 833.84 304.84 871 259 871C213.16 871 177 833.84 177 788V304H181Z" fill="url(#liquidVolume)"/>
+  <path d="M177 302C210 282 310 282 343 302" stroke="#FFD26D" stroke-opacity="0.2" stroke-width="9" stroke-linecap="round"/>
+  <path d="M180 210C180 164.712 216.712 128 262 128H268C313.288 128 350 164.712 350 210V787C350 835.049 311.049 874 263 874H257C208.951 874 170 835.049 170 787V210H180Z" stroke="url(#edgeLight)" stroke-width="6"/>
+  <path d="M195 160C212 140 236 130 264 130C292 130 315 141 331 161" stroke="#FFF1C4" stroke-opacity="0.16" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="260" cy="536" rx="132" ry="320" fill="url(#innerGlow)"/>
+  <ellipse cx="260" cy="812" rx="82" ry="70" fill="url(#bottomRefraction)"/>
+  <path d="M205 177C188 287 190 708 211 825" stroke="url(#leftHighlight)" stroke-width="25" stroke-linecap="round"/>
+  <path d="M198 169C188 205 184 312 185 432" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="15" stroke-linecap="round"/>
+  <path d="M320 192C337 306 333 701 313 816" stroke="url(#rightHighlight)" stroke-width="19" stroke-linecap="round"/>
+  <path d="M338 236C344 320 344 680 337 760" stroke="#FFB331" stroke-opacity="0.12" stroke-width="8" stroke-linecap="round"/>
+  <path d="M233 151C252 144 281 144 300 153" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="5" stroke-linecap="round"/>
+  <path d="M197 820C228 847 294 847 324 819" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="9" stroke-linecap="round"/>
+
+  <g filter="url(#labelDrop)">
+    <path d="M132 366C181 335 340 335 388 366V647C337 684 181 684 132 647V366Z" fill="url(#labelWrap)"/>
+    <path d="M132 366C181 335 340 335 388 366V412C329 392 191 392 132 412V366Z" fill="url(#labelSheen)"/>
+    <path d="M150 402C196 382 324 382 370 402V621C323 651 197 651 150 621V402Z" stroke="#FFF8D8" stroke-opacity="0.24" stroke-width="3"/>
+    <path d="M168 451C207 427 314 427 352 451V588C314 615 207 615 168 588V451Z" fill="url(#labelCore)"/>
+    <path d="M178 468C218 449 303 449 342 468" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="3" stroke-linecap="round"/>
+    <text x="260" y="505" text-anchor="middle" fill="#FFF9E8" font-family="Arial, Helvetica, sans-serif" font-size="51" font-weight="700" letter-spacing="-1.8">Kinetic</text>
+    <text x="260" y="562" text-anchor="middle" fill="#FFC247" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" letter-spacing="-1.4">Sip</text>
+    <text x="260" y="612" text-anchor="middle" fill="#FFF9E8" fill-opacity="0.74" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="7">MANGO RUSH</text>
+    <path d="M197 637C231 650 289 650 323 637" stroke="#FFF0B8" stroke-opacity="0.34" stroke-width="4" stroke-linecap="round"/>
+    <path d="M151 402C196 382 324 382 370 402" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M150 621C196 650 323 650 370 621" stroke="#26090A" stroke-opacity="0.22" stroke-width="3"/>
+  </g>
+
+  <path d="M169 221C182 184 209 158 247 148" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="7" stroke-linecap="round"/>
+  <path d="M200 803C207 836 225 856 253 862" stroke="#FFCB67" stroke-opacity="0.14" stroke-width="10" stroke-linecap="round" filter="url(#microBlur)"/>
+  <path d="M317 803C311 835 293 855 267 862" stroke="#D71945" stroke-opacity="0.16" stroke-width="10" stroke-linecap="round" filter="url(#microBlur)"/>
+</svg>
