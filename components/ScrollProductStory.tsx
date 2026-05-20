@@ -56,7 +56,7 @@ const sceneCopy = [
     label: "Scene 01 / Hero reveal",
     headline: "A bottle staged in warm mango light.",
     copy: "The product enters cleanly, centered in a quiet cinematic frame.",
-    className: "top-[10%]",
+    className: "top-[7%] xl:top-[8%]",
   },
   {
     label: "Scene 02 / Mango depth",
@@ -74,7 +74,7 @@ const sceneCopy = [
     label: "Scene 04 / Product cues",
     headline: "Four details lock onto the pour.",
     copy: "Callouts appear only when the product story is ready for specifics.",
-    className: "top-[9%]",
+    className: "top-[7%] xl:top-[8%]",
   },
 ];
 
@@ -128,7 +128,7 @@ function SceneText({ copy, index, setRef }: SceneTextProps) {
       ref={(node) => {
         setRef(index, node);
       }}
-      className={`pointer-events-none absolute left-1/2 w-[min(92vw,700px)] -translate-x-1/2 text-center opacity-0 will-change-transform ${copy.className}`}
+      className={`pointer-events-none absolute left-1/2 z-30 w-[min(92vw,720px)] -translate-x-1/2 text-center opacity-0 will-change-transform ${copy.className}`}
     >
       <p className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-mango md:text-xs">
         <motion.span
@@ -141,7 +141,7 @@ function SceneText({ copy, index, setRef }: SceneTextProps) {
           {copy.label}
         </motion.span>
       </p>
-      <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold leading-[1.06] text-white md:text-5xl md:leading-[1.02]">
+      <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold leading-[1.08] text-white md:text-[clamp(2.35rem,4vw,3.35rem)] md:leading-[1.03]">
         {copy.headline}
       </h2>
       <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-orange-50/68 md:text-base md:leading-8">
@@ -421,7 +421,7 @@ export function ScrollProductStory() {
         autoAlpha: 0,
         rotate: -5,
         scale: 0.82,
-        y: 64,
+        y: 70,
       });
       gsap.set(auraRef.current, {
         autoAlpha: 0.4,
@@ -486,11 +486,11 @@ export function ScrollProductStory() {
           1.05,
         )
         .to(sceneTextNodes[1], { autoAlpha: 0, y: -18, duration: 0.4 }, 1.62)
-        .to(productRef.current, { scale: 1.06, rotate: 2.8, y: -7, duration: 0.95 }, 1.75)
+        .to(productRef.current, { scale: 1.035, rotate: 2.4, y: 6, duration: 0.95 }, 1.75)
         .to(intensityRef.current, { autoAlpha: 0.9, duration: 0.95 }, 1.75)
         .to(sceneTextNodes[2], { autoAlpha: 1, y: 0, duration: 0.48, ease: "power2.out" }, 1.9)
         .to(sceneTextNodes[2], { autoAlpha: 0, y: -18, duration: 0.38 }, 2.55)
-        .to(productRef.current, { rotate: -1.8, scale: 1.015, x: 0, duration: 0.75 }, 2.7)
+        .to(productRef.current, { rotate: -1.4, scale: 1.005, x: 0, y: 8, duration: 0.75 }, 2.7)
         .to(sceneTextNodes[3], { autoAlpha: 1, y: 0, duration: 0.48, ease: "power2.out" }, 2.74)
         .to(
           featureRefs.current,
@@ -507,7 +507,7 @@ export function ScrollProductStory() {
         .to(sceneTextNodes[3], { autoAlpha: 0, y: -18, duration: 0.4 }, 3.62)
         .to(featureRefs.current, { autoAlpha: 0, y: -18, duration: 0.45 }, 3.75)
         .to(ingredientRefs.current, { autoAlpha: 0, y: 74, scale: 0.62, duration: 0.65 }, 3.9)
-        .to(productRef.current, { rotate: 0, scale: 0.98, y: -16, duration: 0.8 }, 4)
+        .to(productRef.current, { rotate: 0, scale: 0.52, x: 0, y: -190, duration: 0.8 }, 4)
         .to(finalRef.current, { autoAlpha: 1, y: 0, scale: 1, duration: 0.8 }, 4.1)
         .to(finalButtons, { autoAlpha: 1, y: 0, duration: 0.35, stagger: 0.08, ease: "power2.out" }, 4.28)
         .to(auraRef.current, { scale: 1.08, duration: 0.75 }, 4.15);
@@ -591,18 +591,18 @@ export function ScrollProductStory() {
 
             <ProductVisual
               ref={productRef}
-              sizes="(max-width: 1024px) 300px, 350px"
-              className="w-[min(40vw,350px)] min-w-[250px] lg:min-w-[280px]"
+              sizes="(max-width: 1024px) 260px, 300px"
+              className="relative z-10 mt-28 w-[min(34vw,300px)] min-w-[225px] lg:mt-24 lg:min-w-[245px]"
             />
 
             <div
               ref={finalRef}
-              className="absolute bottom-[8%] left-1/2 w-[min(92vw,680px)] -translate-x-1/2 text-center"
+              className="absolute bottom-[clamp(1.25rem,4vh,3rem)] left-1/2 z-50 w-[min(92vw,680px)] -translate-x-1/2 rounded-lg bg-matte/20 p-1 text-center"
             >
               <p className="text-xs font-bold uppercase tracking-[0.32em] text-mango">
                 {finalScene.label}
               </p>
-              <h2 className="mt-3 text-4xl font-extrabold leading-[1.02] md:text-5xl lg:text-6xl">
+              <h2 className="mt-3 text-4xl font-extrabold leading-[1.04] md:text-[clamp(2.35rem,4vw,3.4rem)]">
                 {finalScene.headline}
               </h2>
               <p className="mx-auto mt-4 max-w-lg text-sm leading-7 text-orange-50/68 md:text-base md:leading-8">
